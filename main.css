@@ -60,11 +60,6 @@ a {
   text-decoration: none;
 }
 /* End Global Rules */
-/* start utilities */
-.m-auto {
-  margin: auto;
-}
-/* end utilities */
 /* start header */
 header {
   width: 100%;
@@ -173,7 +168,6 @@ nav a:hover {
 /* end home section */
 /* start services section */
 .services {
-  width: 100%;
   padding: var(--section-padding) 0;
 }
 .services .container {
@@ -208,7 +202,6 @@ nav a:hover {
 /* end services section */
 /* start project section */
 .projects {
-  width: 100%;
   padding: var(--section-padding) 0;
   background-color: #000016;
 }
@@ -246,4 +239,52 @@ nav a:hover {
   text-transform: uppercase;
   font-weight: 800;
 }
+.more-details {
+  color: var(--main-color);
+}
+
+.more-details:hover {
+  color: var(--secondary-color);
+}
 /* end project section */
+/* start contact section */
+.contact {
+  padding: var(--section-padding) 0;
+}
+.contact .container {
+  padding: var(--section-padding) 0;
+}
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000;
+}
+
+.contact .info p {
+  font-size: 1.5em;
+}
+/* end contact section */
+/* start footer section */
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: var(--section-padding) 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title span {
+  color: var(--main-color);
+}
+.footer .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}
+/* end footer section */
