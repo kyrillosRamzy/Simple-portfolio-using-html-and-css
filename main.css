@@ -25,6 +25,19 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.title {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -90,13 +103,6 @@ nav a:hover {
   nav {
     width: 70%;
   }
-}
-.title {
-  text-align: center;
-  color: var(--main-color);
-  font-size: 2.2em;
-  font-weight: 800;
-  margin-bottom: 30px;
 }
 /* end header */
 /* start home section */
@@ -173,12 +179,6 @@ nav a:hover {
 .services .container {
   padding: var(--section-padding) 0;
 }
-.services .container .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 .card {
   width: 21.25em;
   padding: 25px;
@@ -206,3 +206,44 @@ nav a:hover {
   margin: 10px;
 }
 /* end services section */
+/* start project section */
+.projects {
+  width: 100%;
+  padding: var(--section-padding) 0;
+  background-color: #000016;
+}
+.projects .container {
+  padding: var(--section-padding) 0;
+}
+.project-card {
+  background-color: #fff;
+  width: 21.25em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 12px;
+  transition: var(--transition-duration) ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+.project-image img {
+  width: 100%;
+}
+.project-info {
+  padding: 1em;
+}
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+.project-title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/* end project section */
